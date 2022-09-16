@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman</title>
     <link rel="stylesheet" href="hangman.css">
-    <script src="hangman.js"></script>
     
 </head>
 
@@ -14,8 +13,9 @@
 
 <h1>Hangman</h1>
 
-<input type="text" placeholder="Guess">
+<input id="guessInput" maxlength="1" type="text" placeholder="Enter a letter">
+<input onclick=guess() id="guess" type="submit" value="Guess">
     
-
+<script src="hangman.js"></script>
 </body>
 </html>
