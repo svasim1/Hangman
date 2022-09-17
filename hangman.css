@@ -16,10 +16,16 @@ h1 {
     font-size: 1.5cm;
 }
 
-input, button {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #3b0835;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5cm;
+}
+
+input {
+/*     transform: translateX(-50%); */
     padding: 10px;
     border: none;
     border-bottom: 2px solid white; 
@@ -33,23 +39,41 @@ input::placeholder {
     color:white;
    }
 
-input:hover {
-  background-color: #f038ff;
-  -webkit-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
-  -moz-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
-  box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
-  border-radius: 4px;
+#inputContainer {
+  position: absolute;
+  transform: translateX(-50%);
+  width: 25%;
+  left: 50%;
 }
 
-#guess:hover {
-  background-color: #f038ff;
-  -webkit-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
-  -moz-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
-  box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
-  border-radius: 4px;
+#inputContainer input {
+    position: relative;
+    top: 5em;
+    float: left;
+    display: block;
 }
 
-#guess {
-    position: absolute;
-    top: 30%;
+#guess_button {
+  margin: 10px
 }
+
+#setWord_button {
+  margin: 10px
+}
+
+.hoverEffect:hover {
+    background-color: #f038ff;
+    -webkit-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+    -moz-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+    box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+    border-radius: 4px;
+}
+
+#partialWord {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px #3b0835;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 3em;
+}
+
