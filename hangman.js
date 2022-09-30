@@ -44,7 +44,7 @@ function guess() {
 
     //Congratulate you when you win
     if(finished) {
-        if(confirm("Congratulations, you guessed it!\nPlay again?")) {
+        if(confirm("Congratulations, you guessed it!\n\nPlay again?")) {
             window.location.href = "/";
         }
     }
